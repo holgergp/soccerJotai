@@ -4,7 +4,8 @@ import { ItemTypes } from '../../DndItemTypes';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import ContentEditable from 'react-contenteditable';
-import { useStore } from '../../zustand/store';
+import { useAtom } from 'jotai';
+import { updateTeamnameAtom, updateTeamPositionAtom } from '../../jotai/atoms';
 
 const calculatePositionCssClass = (positionNumber) => {
   if (positionNumber === 1) {
@@ -28,8 +29,8 @@ const calculatePositionCssClass = (positionNumber) => {
 
 const Team = (props) => {
   const { rank, team } = props;
-  const updateTeamname = useStore((state) => state.updateTeamname);
-  const swapPositions = useStore((state) => state.swapPositions);
+  const [, updateTeamname] = useAtom(updateTeamnameAtom);
+  const [, swapPositions] = useAtom(updateTeamPositionAtom);
   const dragReturn = useDrag({
     type: ItemTypes.TEAM,
     item: { team },

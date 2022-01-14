@@ -3,27 +3,11 @@ import Position from '../Position/Position';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { Card, Col } from 'react-bootstrap';
-import { useStore } from '../../zustand/store';
-import { useQuery } from 'react-query';
-import { getSampleData } from '../../api/leagueTableApi';
-import { SAMPLE_LEAGUE_TABLE } from './SampleData';
+import { useAtom } from 'jotai';
+import { readOnlyAtom } from '../../jotai/atoms';
 
 const LeagueTable = () => {
-  const positions = useStore((state) => state.positions);
-  const setPositions = useStore((state) => state.setPositions);
-  const { isLoading, error } = useQuery('sampleData', getSampleData, {
-    onSuccess: (data) => setPositions(data),
-    onError: () => setPositions(SAMPLE_LEAGUE_TABLE),
-  });
-
-  if (isLoading) {
-    return 'Loading...';
-  }
-
-  if (error) {
-    return 'An error has occurred: ' + error.message;
-  }
-
+  const [positions] = useAtom(readOnlyAtom);
   return (
     <DndProvider backend={HTML5Backend}>
       <Col md={6}>
