@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/soccerJotai/static/css/main.34fbd58d.chunk.css",
-    "main.js": "/soccerJotai/static/js/main.a48b933b.chunk.js",
-    "main.js.map": "/soccerJotai/static/js/main.a48b933b.chunk.js.map",
+    "main.js": "/soccerJotai/static/js/main.ee62a04b.chunk.js",
+    "main.js.map": "/soccerJotai/static/js/main.ee62a04b.chunk.js.map",
     "runtime-main.js": "/soccerJotai/static/js/runtime-main.fbd7fd36.js",
     "runtime-main.js.map": "/soccerJotai/static/js/runtime-main.fbd7fd36.js.map",
     "static/css/2.de151cb5.chunk.css": "/soccerJotai/static/css/2.de151cb5.chunk.css",
-    "static/js/2.eb6af3b8.chunk.js": "/soccerJotai/static/js/2.eb6af3b8.chunk.js",
-    "static/js/2.eb6af3b8.chunk.js.map": "/soccerJotai/static/js/2.eb6af3b8.chunk.js.map",
+    "static/js/2.63ea3f47.chunk.js": "/soccerJotai/static/js/2.63ea3f47.chunk.js",
+    "static/js/2.63ea3f47.chunk.js.map": "/soccerJotai/static/js/2.63ea3f47.chunk.js.map",
     "index.html": "/soccerJotai/index.html",
     "static/css/2.de151cb5.chunk.css.map": "/soccerJotai/static/css/2.de151cb5.chunk.css.map",
     "static/css/main.34fbd58d.chunk.css.map": "/soccerJotai/static/css/main.34fbd58d.chunk.css.map",
-    "static/js/2.eb6af3b8.chunk.js.LICENSE.txt": "/soccerJotai/static/js/2.eb6af3b8.chunk.js.LICENSE.txt"
+    "static/js/2.63ea3f47.chunk.js.LICENSE.txt": "/soccerJotai/static/js/2.63ea3f47.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fbd7fd36.js",
     "static/css/2.de151cb5.chunk.css",
-    "static/js/2.eb6af3b8.chunk.js",
+    "static/js/2.63ea3f47.chunk.js",
     "static/css/main.34fbd58d.chunk.css",
-    "static/js/main.a48b933b.chunk.js"
+    "static/js/main.ee62a04b.chunk.js"
   ]
 }
