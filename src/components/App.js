@@ -4,6 +4,9 @@ import './App.css';
 import { Container, Row } from 'react-bootstrap';
 import LeagueTable from './LeagueTable/LeagueTable';
 import { Provider } from 'jotai';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 const App = () => {
   return (
@@ -11,7 +14,9 @@ const App = () => {
       <Container>
         <Row>
           <Provider>
-            <LeagueTable />
+            <QueryClientProvider client={queryClient}>
+              <LeagueTable />
+            </QueryClientProvider>
           </Provider>
         </Row>
       </Container>

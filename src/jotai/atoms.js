@@ -5,13 +5,11 @@ import {
 } from '../components/LeagueTable/Positions';
 import { SAMPLE_LEAGUE_TABLE } from '../components/LeagueTable/SampleData';
 
-/**
-const initalValueAtom = atomWithQuery((get) => ({
-  queryKey: ['leagueTable'],
-  queryFn: getSampleData,
-}));
-**/
 export const leagueTableAtom = atom(SAMPLE_LEAGUE_TABLE);
+
+export const initializeAtom = atom(null, (get, set, update) => {
+  set(leagueTableAtom, update);
+});
 
 export const readOnlyAtom = atom((get) => get(leagueTableAtom));
 export const updateTeamnameAtom = atom(null, (get, set, update) => {
