@@ -1,6 +1,8 @@
 describe('Webapp visible', () => {
   beforeEach(() => {
-    cy.visit('/', {timeout: 1200000});
+    cy.intercept('https://holgergp.builtwithdark.com/league-table').as('initialData');
+    cy.visit('/');
+    cy.wait('@initialData')
     cy.get('.card-header');
   });
   it('Change Teamname', () => {
