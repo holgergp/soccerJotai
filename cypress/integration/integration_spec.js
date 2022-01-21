@@ -1,8 +1,14 @@
 describe('Webapp visible', () => {
   beforeEach(() => {
-    cy.intercept('https://holgergp.builtwithdark.com/league-table').as('initialData');
-    cy.visit('/');
-    cy.wait('@initialData')
+    cy.intercept('https://holgergp.builtwithdark.com/league-table').as(
+      'initialData'
+    );
+    cy.visit('/', {
+      headers: {
+        'Accept-Encoding': 'gzip, deflate',
+      },
+    });
+    cy.wait('@initialData');
     cy.get('.card-header');
   });
   it('Change Teamname', () => {
