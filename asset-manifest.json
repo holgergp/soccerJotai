@@ -6,17 +6,17 @@
     "runtime-main.js": "/soccerJotai/static/js/runtime-main.fbd7fd36.js",
     "runtime-main.js.map": "/soccerJotai/static/js/runtime-main.fbd7fd36.js.map",
     "static/css/2.de151cb5.chunk.css": "/soccerJotai/static/css/2.de151cb5.chunk.css",
-    "static/js/2.ea607ae3.chunk.js": "/soccerJotai/static/js/2.ea607ae3.chunk.js",
-    "static/js/2.ea607ae3.chunk.js.map": "/soccerJotai/static/js/2.ea607ae3.chunk.js.map",
+    "static/js/2.1582d4a5.chunk.js": "/soccerJotai/static/js/2.1582d4a5.chunk.js",
+    "static/js/2.1582d4a5.chunk.js.map": "/soccerJotai/static/js/2.1582d4a5.chunk.js.map",
     "index.html": "/soccerJotai/index.html",
     "static/css/2.de151cb5.chunk.css.map": "/soccerJotai/static/css/2.de151cb5.chunk.css.map",
     "static/css/main.34fbd58d.chunk.css.map": "/soccerJotai/static/css/main.34fbd58d.chunk.css.map",
-    "static/js/2.ea607ae3.chunk.js.LICENSE.txt": "/soccerJotai/static/js/2.ea607ae3.chunk.js.LICENSE.txt"
+    "static/js/2.1582d4a5.chunk.js.LICENSE.txt": "/soccerJotai/static/js/2.1582d4a5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fbd7fd36.js",
     "static/css/2.de151cb5.chunk.css",
-    "static/js/2.ea607ae3.chunk.js",
+    "static/js/2.1582d4a5.chunk.js",
     "static/css/main.34fbd58d.chunk.css",
     "static/js/main.ee62a04b.chunk.js"
   ]
